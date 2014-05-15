@@ -1,0 +1,22 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.row{
+	width:100%;
+	border: 1px solid green;
+}
+
+.container{
+	border:1px solid green;
+	width:95%;
+	border: 1px solid blue;
+	height: 50px;
+	margin:0 auto;
+}
+
+.wrap_12{
+	width:1000px;
+	border:1px solid red;
+}

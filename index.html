@@ -1,9 +1,146 @@
-<h1>Funciona</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" media="all" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" media="all" type="text/css" href="css/fonts.css"/>
+	<link rel="stylesheet" media="all" type="text/css" href="css/da.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300|Lily+Script+One' rel='stylesheet' type='text/css'>
+	<!--<link rel="stylesheet" media="(min-width: 1020px)" type="text/css" href="css/static.css"/>
+	<link rel="stylesheet" media="(max-width: 1020px)" type="text/css" href="css/responsive.css"/>-->
+	<link rel="stylesheet" media="all" type="text/css" href="css/static.css"
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+	<script type="text/javascript" src="js/jquery.cslider.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#da-slider').cslider({
+				autoplay: true,
+				bgincrement : 450
+			});
+			$('.nav-links>li>a').click(function(event){
+				event.preventDefault();
+				$('html, body').animate({scrollTop:$(this.hash).offset().top -9}, 500, 'swing');
+			});
+		});
+	</script>
+	
+	<title>.::Rodrigo Ap::. Portfólio</title>
+</head>
+<body>
+	<div class="wrap-wide">
+		<header id="top-wide">
+			<div class="container">
+					<nav class="navbar">
+						<div id="logo" class="wrap_3">
+							<h1>Rodrigo Ap.</h1>
+						</div>
+						<div id="navigation" class="wrap_9">
+						<ul class="nav-links">
+							<li><a href="#home">HOME</a></li>
+							<li><a href="#portfolio">PORTFÓLIO</a></li>
+							<li><a href="#artigos">ARTIGOS</a></li>
+							<li><a href="#contato">CONTATO</a></li>
+						</ul>
+						</div>
+					</nav>
+			</div>
+		</header>
+	</div>
+	<section id="home" class="container">
+		<div class="wrap_12 home">
+			<div class="title">
+				<h1>Rodrigo Ap.</h1>
+				<p>Web designer freelancer</p>
+			</div>
+			<div class="desc">
+				<p>Web designer freelancer apaixonado por flat-design, front-end, wordpress e Sass</p>
+			</div>
+			<div class="home-icons">
+				<a class="hi-icon icon-facebook" href="http://fb.com/rodrigoap23"></a>
+				<a class="hi-icon icon-twitter" href="https://twitter.com/rodrigo_moraes_"></a>
+				<a class="hi-icon icon-wordpress" href="http://www.umatagpordia.com.br/"></a>
+				<a class="hi-icon icon-github" href="https://github.com/rodrigomoraes"></a>
+			</div>
+		</div>
+	</section>
+	<section id="portfolio" class="container">
+		<div class="wrap_12 portfolio">
+			<div class="title">
+				<h1>Portfólio</h1>
+				<p>Estes são alguns de meus trabalhos</p>
+			</div>
+			<div class="desc">
+				<p>realizados pelo freelancer.com e outros feitos para clientes</p>
+			</div>
+			<div id="carrossel">
+				<div id="da-slider" class="da-slider">
+					<div class="da-slide">
+						<h2>Alguma coisa</h2>
+						<p>Alguma descriçao</p>
+						<a class="da-link" href="">Ver mais</a>
+						<div class="da-img">
+							<img src="images/1.png">
+						</div>
+					</div>
 
-<p>este sera meu portfolio em breve!</p>
+					<div class="da-slide">
+						<h2>Alguma coisa</h2>
+						<p>Alguma descriçao</p>
+						<a class="da-link" href="">Ver mais</a>
+						<div class="da-img">
+							<img src="images/2.png">
+						</div>
+				</div>
+				</div>
+				
+			</div>
+			<nav class="da-arrows">
+				<span class="da-arrows-prev"></span>
+				<span class="da-arrows-next"></span>
+			</nav>
 
-<h3>Rodrigo moraes</h3>
-
-<ul>
-	<li>Webdesign</li>
-</ul>
+		</div>
+	</section>
+	<section id="artigos" class="container">
+		<div class="wrap_12 artigos">
+			<div class="title">
+				<h1>Artigos</h1>
+				<p>Leiam os artigos que escrevo no site</p>
+			</div>
+			<div class="desc">
+				<p><a href="http://www.umatagpordia.com.br">uma tag por dia</a>, Leiam, comentem, façam sugestões sobre posts referentes a webdesign e desenvolvimento front-end </p>
+			</div>
+			<div class="image">
+				<img src="images/logo_umatag.png">
+			</div>
+		</div>
+	</section>
+	<section id="contato" class="container">
+		<div class="wrap_12 contato">
+			<div class="title">
+				<h1>Contato</h1>
+			</div>
+			<div class="desc">
+				<p>Atualmente eu atuo como front-end, se você quer ter o código front-end do seu projeto, entre em contato comigo, 
+					faço a conversão do .PSD em HTML</p>
+			</div>
+			<div class="cont">
+				<p><a href="mailto:rodrigo_moraes_@hotmail.com?subject=webdesign">rodrigo_moraes_@hotmail.com</a> </p>
+			</div>
+		</div>
+	</section>
+	<div class="wide-footer">
+		<div class="container">
+			<div class="wrap_12 footer">
+				<p>&copy 2014 - Rodrigo Ap.</p>
+				<!--<p>Hosted by:</p>
+				<div class="git-logo">
+					<a href="http://github.io"><img src="images/GitHub_Logo.png"></a>
+				</div>-->
+			</div>
+		</div>
+	</div>
+</body>
+</html>

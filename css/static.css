@@ -1,0 +1,418 @@
+
+body{
+	display: block;
+	font-size: 62.5%;
+	background-color: #f8f8f8;
+}
+
+.container{
+	width:1020px;
+	margin: 0 auto;
+	display: table;
+}
+
+.wrap_1,
+.wrap_2,
+.wrap_3,
+.wrap_4,
+.wrap_5,
+.wrap_6,
+.wrap_7,
+.wrap_8,
+.wrap_9,
+.wrap_10,
+.wrap_11,
+.wrap_12{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.container .wrap_3{
+	width: 235px;
+	
+}
+
+.container .wrap_9{
+	width:745px;
+}
+
+.container .wrap_12{
+	width:1000px;
+	
+}
+
+.wrap-wide{
+	width:100%;
+	position: absolute;
+	z-index: 9999;
+}
+
+#top-wide{
+	width:100%;
+	height: 50px;
+	position: fixed;
+	background-color: #33ccff;
+	-webkit-box-shadow: 0px 0px 11px rgba(0,0,0,1);
+}
+
+.navbar>.wrap_3>h1{
+	font-family: 'Lily Script One';
+	font-weight: 300;
+	font-size: 3em;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+	color:#fff;
+	line-height: normal;
+	text-align: center;
+	margin:0;
+}
+
+#logo{
+	float:left;
+	clear:both;
+}
+
+#logo h1{
+	margin-top:4px;
+	margin-left:18px;
+}
+
+#navigation{
+	float:right;
+	padding-left:0;
+}
+
+#navigation ul{
+	margin:8px 0px 0 10px;	
+	padding:0;
+}
+
+#navigation ul li{
+	display:inline-block;
+	margin:0 17px;
+}
+
+#navigation ul li a{
+	font-family: 'Lato';
+	font-weight:300;
+	font-size:2.4em;
+	color:#fff;
+	text-decoration:none;
+}
+
+#navigation ul li a:hover{
+	text-decoration: underline;
+}
+
+#navigation ul li a:active{
+	text-decoration: underline;
+}
+
+#home,
+#portfolio,
+#artigos,
+#contato{
+	height: 600px;
+	background: #fff;
+	border-top: none;
+	border-right: 1px solid #e9e9e9;
+	border-bottom: none;
+	border-left: 1px solid #e9e9e9;
+}
+
+.title{
+	margin-top:50px;
+	color:#444;
+	text-align: center;
+}
+
+.title>h1{
+	font-size: 6em;
+	font-family:'Lily Script One';
+	font-weight:300;
+	margin:0;
+	margin-top:124px;
+	line-height:normal;
+}
+
+.title>p{
+	font-size: 3em;
+	font-family:'Lily Script One';
+	font-weight:300;
+	margin-top:-17px;
+	margin-bottom:0px;
+}
+
+.desc{
+	margin:12px 0 0 0;
+	padding:0;
+}
+
+.desc>p{
+	font-family:'Lato';
+	font-weight:300;
+	font-size:3em;
+	width:540px;
+	margin:0 auto;
+}
+
+
+/*font icons*/
+
+.home-icons{
+	text-align:center;
+}
+
+.home-icons .hi-icon{
+	background: rgba(153,229,255,1);
+	-webkit-transition: background 0.2s, color 0.2s;
+	-moz-transition: background 0.2s, color 0.2s;
+	-ms-transition: background 0.2s, color 0.2s;
+	-o-transition: background 0.2s, color 0.2s;
+	transition: background 0.2s, color 0.2s;
+}
+
+.hi-icon{
+	display: inline-block;
+	font-size: 0;
+	cursor: pointer;
+	margin: 42px 11px;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	text-align: center;
+	text-decoration: none;
+	position: relative;
+	z-index: 1;
+	color: #333;
+	line-height:80px;
+}
+
+
+.home-icons .hi-icon:after{
+	top: -7px;
+	left: -7px;
+	padding: 7px;
+	box-shadow: 0 0 0 4px #333;
+	-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+	-webkit-transform: scale(.8);
+	-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+	-moz-transform: scale(.8);
+	-ms-transform: scale(.8);
+	transition: transform 0.2s, opacity 0.2s;
+	transform: scale(.8);
+	opacity: 0;
+}
+
+.hi-icon:after{
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	content: '';
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.home-icons .icon-facebook:hover{
+	color:#fff;
+	background-color: #3b5998;
+}
+
+.home-icons .icon-twitter:hover{
+	color:#fff;
+	background-color: #3cf;
+}
+
+.home-icons .icon-wordpress:hover{
+	color:#fff;
+	background-color: #222;
+}
+
+.home-icons .icon-github:hover{
+	color:#222;
+	background-color: #f6f6f6;
+}
+
+.home-icons .icon-mail:hover{
+	color:#fff;
+	background-color: #3b5998;
+}
+
+.hi-icon:hover:after{
+	-webkit-transform:scale(1);
+	opacity:1;
+}
+
+.icon-facebook,
+.icon-twitter,
+.icon-wordpress,
+.icon-github{
+	font-size:6em;
+}
+
+
+.portfolio>.desc>p{
+	width: 750px;
+}
+
+
+/* slider */
+
+#carrossel{
+	
+	margin-top: 10px;
+}
+
+.da-slider{
+	border-top: 8px solid rgba(65,205,255,1);
+	border-bottom: 8px solid rgba(65,205,255,1);
+	box-shadow: none !important;
+}
+
+.da-dots>span{
+	background: #33ccff;
+}
+
+.da-slide>h2{
+	font-family:'Lily script one';
+	font-weight:300;
+	color:#33ccff;
+}
+
+.da-slide>p{
+	top:180px;
+	font-family:'Lato';
+	font-weight:300;
+	color:#333;
+
+}
+
+.da-slide .da-link{
+	top: 270px; /*depends on p height*/
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+	border-radius:10px;
+	text-decoration:none;
+	color: #333;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	padding: 2px 20px 0px;
+	font-size: 18px;
+	line-height: 30px;
+	width: 80px;
+	text-align: center;
+	background: rgba(51,204,255,0.2);
+}
+.da-slide .da-link:hover{
+	background: rgba(255,255,255,0.3);
+}
+
+
+
+.da-slide-fromright h2{
+    animation: fromRightAnim1 0.6s ease-in 0.8s both;
+}
+.da-slide-fromright p{
+    animation: fromRightAnim2 0.6s ease-in 0.8s both;
+}
+.da-slide-fromright .da-link{
+    animation: fromRightAnim3 0.4s ease-in 1.2s both;
+}
+.da-slide-fromright .da-img{
+    animation: fromRightAnim4 0.6s ease-in 0.8s both;
+}
+
+/* Adjust animations for different behavior of each element: */
+@keyframes fromRightAnim1{
+    0%{ left: 110%; opacity: 0; }
+    100%{ left: 10%; opacity: 1; }
+}
+@keyframes fromRightAnim2{
+    0%{ left: 110%; opacity: 0; }
+    100%{ left: 10%; opacity: 1; }
+}
+@keyframes fromRightAnim3{
+    0%{ left: 110%; opacity: 0; }
+    1%{ left: 10%; opacity: 0; }
+    100%{ left: 10%; opacity: 1; }
+}
+@keyframes fromRightAnim4{
+    0%{ left: 110%; opacity: 0; }
+    100%{ left: 60%; opacity: 1; }
+}
+
+/*final do slider*/
+
+.artigos>.desc>p{
+	width:750px;
+}
+
+.artigos>.desc>p>a{
+	color:#333;
+	text-decoration:none;
+	}
+.artigos>.desc>p>a:hover{
+	text-decoration:underline;
+	-webkit-transition: all 2s;
+	transition: all 2s;
+}
+
+.image{
+	width: 540px;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+
+.image>img{
+	width: 100%;
+}
+
+#contato{
+	height: 550px;
+}
+.contato>.desc>p{
+	width: 800px;
+	text-align: center;
+}
+
+.contato>.cont>p{
+	font-family: 'Lato';
+	font-weight: 700;
+	font-size: 3em;
+	text-align: center;
+}
+
+.contato>.cont>p>a{
+	color:#333;
+	text-decoration: none;
+}
+
+.contato>.cont>p>a:hover{
+	text-decoration: underline;
+}
+
+.wide-footer{
+	width: 100%;
+	height: 100px;
+	background: rgba(65,204,255,1);
+}
+
+.footer{
+	margin-top:40px;
+	height:35px;
+	}
+
+.footer>p{
+	font-family:'Lato';
+	font-size:2.5em;
+	color:#fff;
+	width: 300px;
+	float: left;
+	margin-left:50px;
+	margin-top:0px;
+}
+
+.git-logo{
+	width: 100px;
+}
