@@ -9,6 +9,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:300|Lily+Script+One' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" media="all" type="text/css" href="css/static.css"/>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="bower_components/superscrollorama/js/greensock/TweenMax.min.js"></script>
+	<script type="text/javascript" src="bower_components/superscrollorama/js/jquery.superscrollorama.js"></script>
 	<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -31,6 +33,13 @@
 				event.preventDefault();
 				$('html, body').animate({scrollTop:$(this.hash).offset().top -9}, 500, 'swing');
 			});
+
+
+		
+
+
+
+
 		});
 	</script>
 	
@@ -74,7 +83,7 @@
 		</div>
 	</section>
 	<section id="portfolio" class="container">
-		<div class="wrap_12 portfolio">
+		<div class="wrap_12 portfolio" id="fade_in">
 			<div class="title">
 				<h1>Portfólio</h1>
 				<p>Estes são alguns de meus trabalhos</p>
@@ -85,22 +94,58 @@
 			<div id="carrossel">
 				<div id="da-slider" class="da-slider">
 					<div class="da-slide">
-						<h2>Alguma coisa</h2>
-						<p>Alguma descriçao</p>
-						<a class="da-link" href="">Ver mais</a>
+						<h2>Sublime Logo</h2>
+						<p>Logo do Sublime Text feito em html e css puro </p>
+						<a class="da-link" href="http://codepen.io/rodrigomoraes63/pen/kJjhx">Ver mais</a>
 						<div class="da-img">
-							<img src="images/1.png">
+							<img src="images/sublime_logo.png">
 						</div>
 					</div>
 
 					<div class="da-slide">
-						<h2>Alguma coisa</h2>
-						<p>Alguma descriçao</p>
-						<a class="da-link" href="">Ver mais</a>
+						<h2>Layout Umatag</h2>
+						<p>Layout Umatag 2013, feito em bootstrap</p>
+						<a class="da-link" href="images/screenshot.png">Ver mais</a>
 						<div class="da-img">
-							<img src="images/2.png">
+							<img src="images/layout_umatag-thumb.png">
 						</div>
-				</div>
+					</div>
+
+					<div class="da-slide">
+						<h2>Front-end - Vitauri</h2>
+						<p>Conversão de arquivo psd/html - FullCrossbrowser</p>
+						<a class="da-link" href="http://rodrigomoraes.github.io/portfolio/jobs/vitaurigroup/">Ver mais</a>
+						<div class="da-img">
+							<img src="images/vitauri-thumb.png">
+						</div>
+					</div>
+
+					<div class="da-slide">
+						<h2>Email MKT Nveslty</h2>
+						<p>Fron-end Email mkt para a Nvestly.com - 2013</p>
+						<a class="da-link" href="http://rodrigomoraes.github.io/portfolio/jobs/nvestly/">Ver mais</a>
+						<div class="da-img">
+							<img src="images/nvestly-thumb.png">
+						</div>
+					</div>
+
+					<div class="da-slide">
+						<h2>Banner Sfrega</h2>
+						<p>Banner feito para um comissário Sfrega</p>
+						<a class="da-link" href="images/sfrega/snap.jpg">Ver mais</a>
+						<div class="da-img">
+							<img src="images/sfrega-thumb.png">
+						</div>
+					</div>
+
+					<div class="da-slide">
+						<h2>Radios do Brasil</h2>
+						<p>Front-end Rádios do Brasil feito em Boilerplate</p>
+						<a class="da-link" href="http://radiosdobrasil.me/br/home#">Ver mais</a>
+						<div class="da-img">
+							<img src="images/radios-thumb.png">
+						</div>
+					</div>
 				</div>
 				
 			</div>
