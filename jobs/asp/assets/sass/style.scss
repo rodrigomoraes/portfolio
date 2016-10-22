@@ -1,0 +1,218 @@
+@import 'normalize';
+@import 'gridy';
+@import 'icons';
+@import 'base';
+
+
+
+.bg-bl{
+	background-color: $color__tbox;
+}
+
+.nav-top{
+	width:100%;
+	background-color: $color__pnav;
+}
+.nav-top:before{
+	content:"";
+	position:absolute;
+	margin-top:70px;
+	width:100%;
+	height:5px;
+	background-color: $color__snav;
+}
+
+.logo{
+	img{
+		width:120px;
+	}
+}
+.nav-bar{
+	
+
+	li{
+		display:inline-block;
+		
+		a{
+		text-decoration:none;
+		color: $color__sfont;
+		font-family: $font__p;
+		font-size: 22px;
+		font-weight:300;
+		padding: 0 20px 0 0;
+		}
+	}
+}
+.social-icons{
+	& ul li{
+	display: inline-block;
+	list-style:none;
+	padding: 0 10px;
+	}
+	& ul li a{
+	text-align: center;
+	text-decoration: none;
+	color:$color__sfont;
+	font-size: 30px;
+	}
+}
+#content-fw{
+	width:100%;
+}
+.slider{
+	width:100%;
+	margin-top:5px;
+}
+.title{
+	width:50%;
+	margin: 0 auto;
+
+	h2{
+		text-align:center;
+		font-family: $font__p;
+		font-weight:300;
+		font-size:45px;
+		color: $color__pfont;
+		background-color:#fff;
+		margin-top: 30px;
+		text-transform: uppercase;
+
+		
+	}
+	
+
+}
+h2.background {
+  position: relative;
+  z-index: 1;
+}
+h2.background:before {
+  border-top: 1px solid $color__pfont;
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+
+  position: absolute;
+  /* positioning must be absolute here, and relative positioning must be applied to the parent */
+
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  z-index: -1;
+}
+h2.background span {
+  /* to hide the lines from behind the text, you have to set the background color the same as the container */
+  background: #fff;
+  padding: 0 15px;
+}
+h2.double:before {
+  /* this is just to undo the :before styling from above */
+
+  border-top: none;
+}
+h2.double:after {
+  border-bottom: 1px solid $color__pfont;
+  
+  content: "";
+  margin: 0 auto;
+  /* this centers the line to the full width specified */
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  width: 95%;
+  z-index: -1;
+}
+
+.panels {}
+.panel__item {}
+.panel__container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, .15);
+}
+    .panel__img {
+        background-size: cover;
+        background-position: center center;
+        &:before {
+            content: '';
+            display: block; 
+            width: 100%;
+            padding-top: 60%;
+        }
+		&.-img1 { background-image: url('https://www.dropbox.com/s/t4s8si4k1mpbcpz/animal001.jpg?raw=1'); }
+		&.-img2 { background-image: url('https://www.dropbox.com/s/pjw9vs5a2xrazdw/animal002.jpg?raw=1'); }
+		&.-img3 { background-image: url('https://www.dropbox.com/s/mbsamnl691sa5uv/animal003.jpg?raw=1'); }
+		&.-img4 { background-image: url('https://www.dropbox.com/s/xltajmthhlzyzms/animal004.jpg?raw=1'); }
+		&.-img5 { background-image: url('https://www.dropbox.com/s/elz6c7ubp3m2w3v/animal005.jpg?raw=1'); }
+		&.-img6 { background-image: url('https://www.dropbox.com/s/xaayr5nd9mxgaae/animal006.jpg?raw=1'); }
+		&.-img7 { background-image: url('https://www.dropbox.com/s/v5ienqsfpt7s4p2/animal007.jpg?raw=1'); }
+		&.-img8 { background-image: url('https://www.dropbox.com/s/l2o7wbtbd1gchx7/animal008.jpg?raw=1'); }
+		&.-img9 { background-image: url('https://www.dropbox.com/s/scawe0mzp2rnx0i/animal009.jpg?raw=1'); }
+		&.-img10 { background-image: url('https://www.dropbox.com/s/m9ksbjvxutlg9w1/animal010.jpg?raw=1'); }
+		&.-img11 { background-image: url('https://www.dropbox.com/s/f0ruk9y137lkjnv/animal011.jpg?raw=1'); }
+		&.-img12 { background-image: url('https://www.dropbox.com/s/imk9588a81c6kon/animal012.jpg?raw=1'); }
+		&.-img13 { background-image: url('https://www.dropbox.com/s/rccul5st8bt4sjp/animal013.jpg?raw=1'); }
+	}
+    .panel__description {
+        padding: 28px;
+        p {
+            margin: 0;
+            font-size: 20px;
+        }
+    }
+    .panel__action {
+        margin-top: auto;
+        padding: 28px;
+        border-top: 1px solid #F2F2F2;
+        font-size: 20px;
+        a {
+            color: red;
+            text-decoration: none;
+        }
+    }
+    .contacts_box{
+    	& ul{
+    	list-style: none;
+    	}
+    	& ul li{
+    	color:$color__sfont;
+    	font-size:24px;
+    	text-align:center;
+
+    	}
+    	& ul li p{
+    	display: inline-block;
+    	font-family:$font__p;
+    	font-weight:300;
+    	}
+    }
+
+    .bg-rd{
+       background-color: $color__sbox;
+
+    }
+.quotes-content{
+    height:150px;
+}
+.icon-quotes-left{
+       font-size: 55px;
+       color:$color__sfont;
+       }
+.quotes-box{
+  p{
+  color:$color__sfont;
+  font-family:$font__p;
+  font-size:20px;
+  font-weight:300;
+  }
+}
+.client-box{
+  position: absolute;
+  height:400px;
+}
