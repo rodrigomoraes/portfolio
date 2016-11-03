@@ -2,7 +2,7 @@
 @import 'gridy';
 @import 'icons';
 @import 'base';
-
+@import 'breakepoints';
 
 
 .bg-bl{
@@ -11,7 +11,7 @@
 
 .nav-top{
 	width:100%;
-	background-color: $color__pnav;
+	background-color: $color__logo;
 }
 .nav-top:before{
 	content:"";
@@ -19,7 +19,7 @@
 	margin-top:70px;
 	width:100%;
 	height:5px;
-	background-color: $color__snav;
+	background-color: $color__dlogo;
 }
 
 .logo{
@@ -28,20 +28,31 @@
 	}
 }
 .nav-bar{
-	
+	margin: 0;
 
 	li{
 		display:inline-block;
 		
 		a{
+    display: block;
 		text-decoration:none;
 		color: $color__sfont;
 		font-family: $font__p;
 		font-size: 22px;
 		font-weight:300;
 		padding: 0 20px 0 0;
+    padding: 19.5px 10.0px;
+    
 		}
 	}
+  li:hover{
+    background-color: $color__dlogo;
+    @include transition(0.4s);
+  }
+  .active{
+    background-color: $color__dlogo;
+  }
+ 
 }
 .social-icons{
 	& ul li{
@@ -54,7 +65,19 @@
 	text-decoration: none;
 	color:$color__sfont;
 	font-size: 30px;
+  text-shadow: 1px 1px rgba(34,34,34,0.5);
+  @include transition(0.3s);
 	}
+  & ul li a.face-icon:hover{
+  color: $color__facecolor;
+
+  }
+  & ul li a.twitter-icon:hover{
+  color: $color__twittercolor;
+  }
+  & ul li a.whats-icon:hover{
+  color: $color__whatscolor;
+  }
 }
 #content-fw{
 	width:100%;
@@ -215,4 +238,15 @@ h2.double:after {
 .client-box{
   position: absolute;
   height:400px;
+
+
+}
+
+@media only screen and (max-width:768px){
+  .nav-bar{
+    li{
+    display: block;
+    }
+
+  }
 }

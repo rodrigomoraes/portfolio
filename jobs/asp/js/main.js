@@ -1,15 +1,17 @@
 $(document).ready(function(){
 	//slider
-	$('.slider').responsiveSlides({
-		height: 430,
-		background: 'c1c1c1',
-		startDelay:0
-	});
-	//blur no bground
+	$(".rslides").responsiveSlides();
+	/*blur no bground
 	$('.client-box').backgroundBlur({
 		imageURL: 'http://localhost/asp/static/imagens/banner1.jpg',
 		blurAmount: 50,
 		imageClass: 'bg-blur'
 
+	});*/
+	$(".regular").slick({
+		slidesToShow: 3,
+		slidesToScroll:3,
+		autoplay: true,
+		centerMode: true
 	});
 });
