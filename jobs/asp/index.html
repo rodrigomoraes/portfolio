@@ -2,11 +2,50 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<title>Grupo ASP Segurança - Atibaia</title>
 	<style>
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
-</style> 
-<link rel="stylesheet" href="https://i.icomoon.io/public/temp/bbf289be96/UntitledProject/style.css">
+		@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+
+
+		.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
+	</style> 
+	
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -15,11 +54,11 @@
 		<div gy="wrap">
 			<div gy="g" gy-h="g-middle g-no-gutter">
 				<div class="logo">
-					<img src="static/imagens/logo.png">
+					<img src="static/imagens/logo-2.png">
 				</div>
 				<nav class="menu" gy="c-12 cm-auto">
 				<ul class="nav-bar">
-					<li><a href="#">HOME</a></li>
+					<li class="active"><a href="#">HOME</a></li>
 					<li><a href="#">QUEM SOMOS</a></li>
 					<li><a href="#">SERVIÇOS</a></li>
 					<li><a href="#">PORTFOLIO</a></li>
@@ -29,17 +68,17 @@
 			<div class="social-icons">
 				<ul>
 					<li>
-						<a href="">
+						<a class="face-icon" href="">
 							<span class="icon-facebook2"></span>
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a class="twitter-icon" href="">
 							<span class="icon-twitter"></span>
 						</a>
 					</li>
 					<li>
-						<a href="">
+						<a class="whats-icon" href="">
 							<span class="icon-whatsapp"></span>
 						</a>
 					</li>
@@ -50,9 +89,14 @@
 		</div>
 	</header>
 	<div id="content-fw" class="slider">
-		<img src="https://drive.google.com/uc?export=view&id=0B8uoQ-Ue05dOMXhYcjJDbE9mcms">
-		<img src="https://drive.google.com/uc?export=view&id=0B8uoQ-Ue05dOTFJTT2w2Zll1TGc">
-		<img src="https://drive.google.com/uc?export=view&id=0B8uoQ-Ue05dOaF9hY0UtNEFiaVE">
+		<ul class="rslides">
+			
+			<li><img src="static/imagens/1.png"></li>
+			<li><img src="static/imagens/2.png"></li>
+			<li><img src="static/imagens/3.png"></li>
+		</ul>
+		
+		
 	</div>
 	<div id="content-fw">
 		<div gy="wrap">
@@ -119,7 +163,7 @@
 						<ul>
 							<li>
 								<span class="icon-phone"></span>
-								<p>(11)4411-1111</p>
+								<p>(11)4411-3361</p>
 							</li>
 						</ul>
 					</div>
@@ -139,7 +183,7 @@
 						<ul>
 							<li>
 								<span class="icon-whatsapp"></span>
-								<p>(11)94411-1111</p>
+								<p>(11)96398-7150</p>
 							</li>
 						</ul>
 					</div>
@@ -172,15 +216,61 @@
 			
 		</div>
 	</div>
-	<div id="content-fw" class="client-box">
+	<div id="content-fw">
 		<div gy="wrap">
-			<img src="static/imagens/clientes.png">
+			<div gy="g">
+				<div gy="c-12">
+				<div class="regular">
+					<div>
+						<img src="static/imagens/clients/1.png">
+					</div>
+					<div>
+						<img src="static/imagens/clients/2.png">
+					</div>
+					<div>
+						<img src="static/imagens/clients/3.png">
+					</div>
+					<div>
+						<img src="static/imagens/clients/1.png">
+					</div>
+					<div>
+						<img src="static/imagens/clients/2.png">
+					</div>
+					<div>
+						<img src="static/imagens/clients/3.png">
+					</div>
+
+					
+				</div>
+					
+				</div>
+			</div>
 		</div>
 	</div>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8&appId=1427393670807296";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+
+
 	<footer id="content-fw" class="footer">
 		<div gy="wrap">
 			<div gy="g">
-				
+				<div gy="c-4">
+					<div class="fb-page" data-href="https://www.facebook.com/www.websocorro.com.br/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/www.websocorro.com.br/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/www.websocorro.com.br/">Next Web Design Studio</a></blockquote></div>
+				</div>
 			</div>
 		</div>
 	</footer>
@@ -191,10 +281,11 @@
 
 
 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="js/background-blur.min.js"></script>
 <script type="text/javascript" src="js/jquery.onImagesLoad.min.js"></script>
 <script type="text/javascript" src="js/jquery.responsiveSlides.js"></script>
 <script type="text/javascript" src="js/liga.js"></script>
+<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
