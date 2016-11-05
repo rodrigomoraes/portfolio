@@ -238,9 +238,56 @@ h2.double:after {
 .client-box{
   position: absolute;
   height:400px;
+}
+.bx-clients{
+  border-bottom: 1px groove #999;
+}
 
+
+.bx-content-wh{
+  h3{
+   text-align:center;
+   color:$color__pfont;
+    font-family: $font__p; 
+    
+  }
+  ul{
+    li{
+      display: block;
+        p{
+        display: inline;
+        color:$color__pfont;
+        font-family:$font__p;
+        line-height: 1.5em;
+        }
+        span{
+        color:#70BF74;
+        }
+    }
+  }
 
 }
+
+.face-widget{
+  width:340px;
+  margin: 0 auto;
+}
+
+
+.footer{
+  height: 100px;
+  background-color: $color__logo;
+}
+
+
+
+
+
+@media only screen and (max-width:1264px){
+  
+}
+
+
 
 @media only screen and (max-width:768px){
   .nav-bar{
