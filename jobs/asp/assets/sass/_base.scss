@@ -1,0 +1,32 @@
+$color__pnav: #3498db;
+$color__snav: #2980b9;
+$color__pfont: #333;
+$color__sfont: #ffffff;
+$color__pbox: #2980b9;
+$color__sbox: #e74c3c;
+$color__tbox: #2c3e50;
+
+
+$color__logo: #7a77ae;
+$color__dlogo: darken($color__logo, 10%);
+
+$color__facecolor: #3b5998;
+$color__twittercolor: #00aced;
+$color__whatscolor: #25d366;
+
+@mixin transition($time){
+  -webkit-transition: all $time ease;
+  -moz-transition: all $time ease;
+  -ms-transition: all $time ease;
+  -o-transition: all $time ease;
+   transition: all $time ease;
+}
+
+$font__p: 'Open Sans', sans-serif;
+
+
+
+
+
+
+
