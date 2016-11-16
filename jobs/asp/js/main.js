@@ -14,4 +14,11 @@ $(document).ready(function(){
 		autoplay: true,
 		centerMode: true
 	});
+
+	//efeito do menu
+
+	$(".nav-button").on('click', function(){
+		$(this).toggleClass("btn-active");
+		$(".nav-bar").toggleClass("SlideIn");		
+	});
 });

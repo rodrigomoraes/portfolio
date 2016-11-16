@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#7a77ae"/>
+
 
 	<title>Grupo ASP Segurança - Atibaia</title>
 	<style>
@@ -41,6 +43,11 @@
   width: 100%;
   border: 0;
   }
+
+  .teste{
+  	background-color:tomato;
+  	height: 50pc;
+  }
 	</style> 
 	
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
@@ -50,13 +57,24 @@
 </head>
 <body>
 	<!--HEADER -->
-	<header class="nav-top">
+	<header class="header">
 		<div gy="wrap">
+			
 			<div gy="g" gy-h="g-middle g-no-gutter">
-				<div class="logo">
-					<img src="static/imagens/logo-2.png">
+				<div gy="cm-1 cs-1" id="wrap-nav-button">
+					<button class="nav-button">
+						<span class="icon-menu3"></span>
+					</button>
 				</div>
-				<nav class="menu" gy="c-12 cm-auto">
+				
+				<div class="logo" gy="cl-2 cs-2">
+					<div id="wrap-logo">
+						<img src="static/imagens/logo-2.png">
+					</div>
+					
+				</div>
+				<nav class="menu" gy="cl-7 cm-8 cs-8">
+				
 				<ul class="nav-bar">
 					<li class="active"><a href="#">HOME</a></li>
 					<li><a href="#">QUEM SOMOS</a></li>
@@ -65,27 +83,24 @@
 					<li><a href="#">CONTATO</a></li>
 				</ul>
 			</nav>
-			<div class="social-icons">
-				<ul>
-					<li>
-						<a class="face-icon" href="">
-							<span class="icon-facebook2"></span>
-						</a>
-					</li>
-					<li>
-						<a class="twitter-icon" href="">
-							<span class="icon-twitter"></span>
-						</a>
-					</li>
-					<li>
-						<a class="whats-icon" href="">
-							<span class="icon-whatsapp"></span>
-						</a>
-					</li>
-				</ul>
+			<div class="social-icons" gy="cl-3 cm-1 cs-1">
+				<div id="wrap-icons-social">
+					<ul>
+						<li>
+							<a class="face-icon" href="">
+								<span class="icon-facebook2"></span>
+							</a>
+						</li>
+						<li>
+							<a class="twitter-icon" href="">
+								<span class="icon-twitter"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 			</div>
-			
+		
 		</div>
 	</header>
 	<div id="content-fw" class="slider">
@@ -95,19 +110,18 @@
 			<li><img src="static/imagens/2.png"></li>
 			<li><img src="static/imagens/3.png"></li>
 		</ul>
-		
-		
 	</div>
 	<div id="content-fw">
 		<div gy="wrap">
 			<div gy="g" gy-h="g-middle g-no-gutter">
-				<header class="title">
+				<header class="title" gy="cl-10 cm-10 cs-10">
 					<h2 class="background double"><span>SERVIÇOS</span></h2>
 				</header>
 			</div>
 			
 		</div>
 	</div>
+	
 	<div id="content-fw">
 		<div gy="wrap">
 			<div class="panels" gy="g-1 gs-2 gm-3" gy-h="g-equal-height">
@@ -155,10 +169,11 @@
 			</div>
 		</div>
 	</div>
+
 	<div id="content-fw" class="bg-bl">
 		<div gy="wrap">
 			<div gy="g" gy-h="g-middle g-no-gutter">
-				<div gy="c-3 cm-auto" >
+				<div gy="cs-10 cl-4" >
 					<div class="contacts_box">
 						<ul>
 							<li>
@@ -168,7 +183,7 @@
 						</ul>
 					</div>
 				</div>
-				<div gy="c-4">
+				<div gy="cs-10 cl-4">
 					<div class="contacts_box">
 						<ul>
 							<li>
@@ -178,7 +193,7 @@
 						</ul>
 					</div>
 				</div>
-				<div gy="cm-auto">
+				<div gy="cs-10 cl-4">
 					<div class="contacts_box">
 						<ul>
 							<li>
@@ -209,7 +224,7 @@
 	<div id="content-fw">
 		<div gy="wrap">
 			<div gy="g" gy-h="g-middle g-no-gutter">
-				<header class="title">
+				<header class="title" gy="cl-10 cm-10 cs-10">
 					<h2 class="background double"><span>NOSSOS CLIENTES</span></h2>
 				</header>
 			</div>
