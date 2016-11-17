@@ -24,7 +24,7 @@ font-size: 62.5%;
 .header:before{
 	content:"";
 	position:absolute;
-	margin-top:70px;
+	margin-top:68px;
 	width:100%;
 	height:5px;
 	background-color: $color__dlogo;
@@ -39,6 +39,7 @@ font-size: 62.5%;
 #wrap-logo{
   margin: 0 auto;
     width: 40%;
+    float: left;
 }
 .nav-button{
   background-color: transparent;
