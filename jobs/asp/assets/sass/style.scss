@@ -44,7 +44,7 @@ font-size: 62.5%;
 .nav-button{
   background-color: transparent;
   border: none;
-
+  font-size:1.5em;
   span{
   color: $color__sfont;
   font-size: 2em;
@@ -380,6 +380,7 @@ h2.double:after {
   }
   #wrap-logo{
   width:120px;
+  float:none;
   }
   .header:before{
   top:120px;
