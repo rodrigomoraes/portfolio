@@ -33,6 +33,8 @@
             'list3': '&#xe9bd;',
             'menu3': '&#xe9bf;',
             'options3': '&#xe9bf;',
+            'checkmark': '&#xea10;',
+            'tick': '&#xea10;',
             'facebook2': '&#xea91;',
             'brand11': '&#xea91;',
             'whatsapp': '&#xea93;',

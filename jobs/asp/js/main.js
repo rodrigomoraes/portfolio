@@ -21,4 +21,34 @@ $(document).ready(function(){
 		$(this).toggleClass("btn-active");
 		$(".nav-bar").toggleClass("SlideIn");		
 	});
+
+
+	$(window).scroll(function(){
+		//var $ban = $(".banner"),
+		//banHeight = $ban.outerHeight(),
+		windowTop = $(this).scrollTop();
+
+		$(".banner picture").css('top', '-'+  windowTop + 'px');
+		console.log(windowTop);
+
+	});
+
+	function count(){
+    var counter = { var: 0 };
+ TweenMax.to(counter, 5, {
+      var: 50,  
+      onUpdate: function () {
+          $('#counter').html(Math.ceil(counter.var));
+          $('#counter-1').html(Math.ceil(counter.var));
+          $('#counter-2').html(Math.ceil(counter.var));
+      },
+      onComplete: function(){
+        // count();
+     },    
+      ease:Circ.easeOut
+  });
+}
+    
+count();
+    
 });

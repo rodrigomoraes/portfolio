@@ -3,18 +3,22 @@
 @import 'gridy-mixins';
 @import 'icons';
 @import 'base';
-@import 'breakepoints';
+
+@import 'qmsomos';
+@import 'servicos';
+@import 'footer';
 
 
 
 
-body {
-font-size: 62.5%;
-}
 
 
 .bg-bl{
 	background-color: $color__tbox;
+}
+
+.bg-pl{
+  background-color: $color__logo2;
 }
 
 .header{
@@ -119,11 +123,11 @@ font-size: 62.5%;
   color: $color__whatscolor;
   }
 }
-#content-fw{
-	width:100%;
-  display: flex;
-  overflow: hidden;
-}
+
+
+/*Estilos da index*/
+
+
 .slider{
 	width:100%;
 	margin-top:5px;
@@ -140,11 +144,8 @@ font-size: 62.5%;
 		color: $color__pfont;
 		background-color:#fff;
 		margin-top: 30px;
-		text-transform: uppercase;
-
-		
+		text-transform: uppercase;		
 	}
-	
 
 }
 h2.background {
@@ -247,7 +248,7 @@ h2.double:after {
     	}
     	& ul li{
     	color:$color__sfont;
-    	font-size:24px;
+    	font-size:2.4em;
     	text-align:center;
 
     	}
@@ -260,7 +261,7 @@ h2.double:after {
 
     .bg-rd{
        background-color: $color__sbox;
-
+       padding: 26px 0 26px 0;
     }
 .quotes-content{
     height:150px;
@@ -291,6 +292,7 @@ h2.double:after {
    text-align:center;
    color:$color__pfont;
     font-family: $font__p; 
+    font-size: 2em;
     
   }
   ul{
@@ -301,6 +303,7 @@ h2.double:after {
         color:$color__pfont;
         font-family:$font__p;
         line-height: 1.5em;
+        font-size: 1.5em;
         }
         span{
         color:#70BF74;
@@ -313,12 +316,6 @@ h2.double:after {
 .face-widget{
   width:340px;
   margin: 0 auto;
-}
-
-
-.footer{
-  height: 100px;
-  background-color: $color__logo;
 }
 
 
@@ -371,6 +368,12 @@ h2.double:after {
     }
 
   }
+  .contacts_box ul li p{
+  font-size: 0.9em;
+  }
+  .contacts_box ul li{
+  font-size: 1.9em;
+  }
 }
 
 @media only screen and (max-width:400px){
@@ -383,7 +386,7 @@ h2.double:after {
   float:none;
   }
   .header:before{
-  top:120px;
+  top:106px;
   }
   #wrap-icons-social{
   width: 80px;
@@ -398,10 +401,12 @@ h2.double:after {
     }
 
   }
+  .contacts_box{
+  ul{
+  padding:0;
+  }
+  }
 }
 
-.SlideIn{
-  transform: translate3d(300px,0,0); 
-  transition: 0.5s ease-in all;
-}
+
 
