@@ -35,7 +35,28 @@
                   Particles.init({
                   selector: '.particle',
                   connectParticles: true,
-                  speed:0.2
+                  speed:0.2,
+
+                  responsive: [
+                      {
+                        breakpoint:768,
+                        options: {
+                          maxParticles:20,
+                          connectParticles: true,
+                        }
+                      }, {
+                        breakpoint:425,
+                        options: {
+                          maxParticles:10,
+                          connectParticles:true
+                        }
+                      }, {
+                        breakpoint:320,
+                        options: {
+                          maxParticles: 0 // disables particles.js
+                        }
+                      }
+                    ]
                 });
               };
         </script>
