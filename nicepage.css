@@ -8452,6 +8452,7 @@ section.u-image,
   position: relative;
 }
 .u-expanded {
+  
   position: absolute !important;
   left: 0;
   top: 0;
@@ -8459,6 +8460,7 @@ section.u-image,
   height: 100%;
 }
 .u-expanded-width {
+  
   width: 100% !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
